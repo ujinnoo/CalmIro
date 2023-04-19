@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmIro ｜ Toy</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    cursor: url("img/point2.png"), auto;
+}
+
+html:active, body:active {
+    cursor: url("img/point.png"), auto;
+}
+
+a:hover {
+    cursor: url("img/point3.png"), auto;
+}
+
+a:active {
+    cursor: url("img/point.png"), auto;
+}
+
+body {
+    margin: 30px 200px 0 200px;
+}
+
+header {
+    display: inline;
+}
+
+header nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 20px 0 20px;
+}
+
+li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+header nav a:hover:after {
+    width: 100%;
+}
+
+header nav a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.underline a:after {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    border: solid 1px black;
+    margin: 30px auto 0 auto;
+    width: 260px;
+    font-size: 10pt;
+    padding: 5px 20px;
+}
+table {
+    margin: 20px auto 0 auto;
+}
+
+
+table tr, td {
+    padding: 0 10px;
+}
+
+footer {
+            margin-top: 200px;
+            border-top: solid 1px black;
+            font-size: 8pt;
+            height: 80px;
+            text-align: right;
+            line-height: 20pt;
+            padding-top: 30px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="main.html"><img src="./img/Logo.png" width="70px"></a>
+        <nav>
+            <ul>
+                <li><a href="cat.html">Cat</a></li>
+                <li><a href="food_can.html">Food</a></li>
+                <li><a href="grooming.html">Grooming</a></li>
+                <li class="underline"><a href="toy.html">Toy</a></li>
+                <li><a href="gallery2.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div style="margin-bottom: 50px;" class="title">우리집 고양이가 좋아하는 장난감 모음</div>
+            <table id="first">
+                <tr>
+                    <td><img src="./img/toy2.png" height="150"></td>
+                    <td><img src="./img/toy3.png" height="150"></td>
+                    <td><img src="./img/toy4.png" height="150"></td>
+                    <td><img src="./img/toy6.png" height="150"></td>
+                    <td><img src="./img/toy1.png" height="150"></td>
+                </tr>
+            </table>
+
+        <div style="margin-top: 80px" class="title">우리집 고양이가 좋아하는 영상 모음</div>
+        <table>
+            <tr>
+                <td><video src="video/toy1.mp4" width="250px" autoplay muted loop></video></td>
+                <td><video src="video/toy2.mp4" width="250px" autoplay muted loop></video></td>
+                <td><video src="video/toy3.mp4" width="250px" autoplay muted loop></video></td>
+                <td><video src="video/toy4.mp4" width="250px" autoplay muted loop></video></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        Copyright ⓒ 2023 Yujin Lee, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22261085 이유진 ｜ dbwlssn@kakao.com
+    </footer>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmIro ｜ Gallery</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-image: url(img/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: url("img/point2.png"), auto;
+}
+
+html:active, body:active {
+    cursor: url("img/point.png"), auto;
+}
+
+a:hover {
+    cursor: url("img/point3.png"), auto;
+}
+
+a:active {
+    cursor: url("img/point.png"), auto;
+}
+
+body {
+    margin: 30px 200px 0 200px;
+}
+
+header {
+    display: inline;
+}
+
+header nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 20px 0 20px;
+}
+
+li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+header nav a:hover:after {
+    width: 100%;
+}
+
+header nav a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.underline a:after {
+    width: 100%;
+}
+
+#phone {
+    margin: 50px auto 0 auto;
+    background-color: black;
+    width: 310px;
+    height: 500px;
+    border-radius: 50px;
+}
+
+#home {
+    position: absolute;
+    margin: 440px 0 0 135px;
+}
+
+#cam {
+    position: absolute;
+    display: inline-block;
+    background-color: #5d5d5d;
+    width: 10px;
+    height: 10px;
+    margin: 20px 0 0 210px;
+    border-radius: 100px;
+}
+
+#speaker {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    margin: 20px 0 0 145px;
+    border-radius: 100px;
+    background-color: #5d5d5d;
+}
+
+#screen {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    overflow-y: scroll;
+    margin: 50px 0 0 15px ;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#insta {
+    font-weight: bold;
+    margin: 5px 0 0 10px
+}
+
+#profile {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #cecece;
+    border-radius: 100px;
+    margin: 5px 0 0 10px;
+}
+
+#profile img {
+    margin: 5px 0 0 5px;
+}
+
+#following {
+    font-size: 8pt;
+    text-align: center;
+    margin: 15px 0 0 70px;
+}
+
+.name {
+    font-size: 6pt;
+    margin: 5px 0 10px 10px
+}
+
+#follow {
+    font-size: 8pt;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 40px 4px 40px;
+    margin-left: 10px;
+    width: 80px;
+    color: white;
+    background-color: #2a95ff;
+}
+
+#message {
+    font-size: 8pt;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 40px 4px 40px;
+    margin-left: 6px;
+    width: 80px;
+    background-color: #e8e8e8;
+}
+
+#plus {
+    font-size: 8pt;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 7px 4px 7px;
+    margin-left: 6px;
+    width: 100px;
+    background-color: #e8e8e8;
+}
+
+#feed {
+    margin-top: 5px;
+}
+
+table {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+tr, td {
+    padding: 0 10px;
+}
+
+footer {
+            margin-top: 100px;
+            border-top: solid 1px black;
+            font-size: 8pt;
+            height: 80px;
+            text-align: right;
+            line-height: 20pt;
+            padding-top: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="main.html"><img src="./img/Logo.png" width="70px"></a>
+        <nav>
+            <ul>
+                <li><a href="cat.html">Cat</a></li>
+                <li><a href="food_can.html">Food</a></li>
+                <li><a href="grooming.html">Grooming</a></li>
+                <li><a href="toy.html">Toy</a></li>
+                <li class="underline"><a href="gallery2.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="phone">
+            <div id="speaker"></div>
+            <div id="cam"></div>
+            <div id="screen">
+                <p style="text-align: center; font-size: 10pt; font-weight: bold;">06:12 PM</p>
+                <table>
+                    <tr>
+                        <td><a href="gallery.html"><img src="img/instagram.png" width="50px"></a></td>
+                        <td><a href="friends.html"><img src="img/friends.png" width="50px"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <a href="gallery2.html"><img id="home" src="./img/2.png" width="40px"></a>
+        </div>
+    </section>
+    <footer>
+        Copyright ⓒ 2023 Yujin Lee, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22261085 이유진 ｜ dbwlssn@kakao.com
+    </footer>
+</body>
+</html>

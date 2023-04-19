@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmIro ｜ Grooming</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    cursor: url("img/point2.png"), auto;
+}
+
+html:active, body:active {
+    cursor: url("img/point.png"), auto;
+}
+
+a:hover {
+    cursor: url("img/point3.png"), auto;
+}
+
+a:active {
+    cursor: url("img/point.png"), auto;
+}
+
+body {
+    margin: 30px 200px 0 200px;
+}
+
+header {
+    display: inline;
+}
+
+header nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 20px 0 20px;
+}
+
+li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+header nav a:hover:after {
+    width: 100%;
+}
+
+header nav a:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.underline a:after {
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+    padding: 50px;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container ul li {
+    font-size: 35px;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+}
+
+#container ul li:hover {
+    cursor: url("img/point3.png"), auto;
+}
+
+.hovring ul li img {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    transform: scale(0);
+}
+
+.hovring ul li:hover img {
+    visibility: visible;
+    transform: scale(1);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hovring ul:hover li span {
+    opacity: 0.5;
+}
+
+.hovring ul li:hover span {
+    opacity: 1;
+}
+
+@keyframes blink-effect {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink-effect 1.5s ease-in-out infinite;
+    text-align: center;
+    margin-top: 40px;
+}
+footer {
+            margin-top: 200px;
+            border-top: solid 1px black;
+            font-size: 8pt;
+            height: 80px;
+            text-align: right;
+            line-height: 20pt;
+            padding-top: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="main.html"><img src="./img/Logo.png" width="70px"></a>
+        <nav>
+            <ul>
+                <li><a href="cat.html">Cat</a></li>
+                <li><a href="food_can.html">Food</a></li>
+                <li class="underline"><a href="grooming.html">Grooming</a></li>
+                <li><a href="toy.html">Toy</a></li>
+                <li><a href="gallery2.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="blink">글씨를 Hover 해보세요</div>
+    <section>
+        <div id="container" class="hovring">
+            <p>
+                <ul>
+                    <li>
+                        <span>카미는 검은 고양이,</span>
+                        <img src="img/blackcat.png" width="120px">
+                    </li>
+                    <li>
+                        <span>이로는 흰 고양이로</span>
+                        <img src="img/whitecat.png" width="100px">
+                    </li>
+                    <li>
+                        <span>집이 검은 털과</span>
+                        <img style="border-radius: 50%;" src="img/black.jpg" width="100px">
+                    </li>
+                    <li>
+                        <span>흰 털으로 뒤덮일 수 있어</span>
+                        <img style="border: solid 1px black; border-radius: 50%;" src="img/white.jpg" width="100px">
+                    </li>
+                    <li>
+                        <span>매일 빗질은 필수이다.</span>
+                        <img src="img/brush.png" width="200px">
+                    </li>
+                    <li>
+                        <span>두 고양이 모두 샤워도 얌전하게 하는</span>
+                        <img src="img/shower.png" width="200px">
+                    </li>
+                    <li>
+                        <span>수속성 고양이이다.</span>
+                        <img src="img/water.png" width="200px">
+                    </li>
+                    <li>
+                        <span>샴푸를 재빠르게 하고</span>
+                        <img src="img/shampoo.png" width="200px">
+                    </li>
+                    <li>
+                        <span>물로 깨끗이 씻어주는 샤워는</span>
+                        <img src="img/bubble.png" width="200px">
+                    </li>
+                    <li>
+                        <span>한두 달에 한 번정도 한다.</span>
+                        <img src="img/calendar.png" width="100px">
+                    </li>
+                    <li>
+                        <span>샤워를 마치면 빙어를 특식으로 급여한다.</span>
+                        <img src="img/fish2.png" width="200px">
+                    </li>
+                    <li>
+                        <span>귀여운 카미 이로 ^3^</span>
+                        <img src="img/wetcat.png" width="200px">
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </section>
+    <footer>
+        Copyright ⓒ 2023 Yujin Lee, All Right Reserved <br>
+        고급웹퍼블리싱 직무수행능력평가1 D 22261085 이유진 ｜ dbwlssn@kakao.com
+    </footer>
+</body>
+</html>
