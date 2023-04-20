@@ -4,19 +4,19 @@
 }
 
 html, body {
-    cursor: url("img/point2.png"), auto;
+    cursor: url("../img/point2.png"), auto;
 }
 
 html:active, body:active {
-    cursor: url("img/point.png"), auto;
+    cursor: url("../img/point.png"), auto;
 }
 
 a:hover {
-    cursor: url("img/point3.png"), auto;
+    cursor: url("../img/point3.png"), auto;
 }
 
 a:active {
-    cursor: url("img/point.png"), auto;
+    cursor: url("../img/point.png"), auto;
 }
 
 body {
